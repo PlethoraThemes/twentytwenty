@@ -36,12 +36,12 @@
   -moz-transition-property: opacity;
   transition-property: opacity; }
 
-.twentytwenty-before-label:before, .twentytwenty-after-label:before {
+.twentytwenty-before-label-text, .twentytwenty-after-label-text {
   color: white;
   font-size: 13px;
   letter-spacing: 0.1em; }
 
-.twentytwenty-before-label:before, .twentytwenty-after-label:before {
+.twentytwenty-before-label-text, .twentytwenty-after-label-text {
   position: absolute;
   background: rgba(255, 255, 255, 0.2);
   line-height: 38px;
@@ -50,11 +50,13 @@
   -moz-border-radius: 2px;
   border-radius: 2px; }
 
-.twentytwenty-horizontal .twentytwenty-before-label:before, .twentytwenty-horizontal .twentytwenty-after-label:before {
+.twentytwenty-horizontal .twentytwenty-before-label-text, 
+.twentytwenty-horizontal .twentytwenty-after-label-text {
   top: 50%;
   margin-top: -19px; }
 
-.twentytwenty-vertical .twentytwenty-before-label:before, .twentytwenty-vertical .twentytwenty-after-label:before {
+.twentytwenty-vertical .twentytwenty-before-label-text, 
+.twentytwenty-vertical .twentytwenty-after-label-text {
   left: 50%;
   margin-left: -45px;
   text-align: center;
@@ -101,24 +103,20 @@
 
 .twentytwenty-before-label {
   opacity: 0; }
-  .twentytwenty-before-label:before {
-    content: "Before"; }
 
 .twentytwenty-after-label {
   opacity: 0; }
-  .twentytwenty-after-label:before {
-    content: "After"; }
 
-.twentytwenty-horizontal .twentytwenty-before-label:before {
+.twentytwenty-horizontal .twentytwenty-before-label-text {
   left: 10px; }
 
-.twentytwenty-horizontal .twentytwenty-after-label:before {
+.twentytwenty-horizontal .twentytwenty-after-label-text {
   right: 10px; }
 
-.twentytwenty-vertical .twentytwenty-before-label:before {
+.twentytwenty-vertical .twentytwenty-before-label-text {
   top: 10px; }
 
-.twentytwenty-vertical .twentytwenty-after-label:before {
+.twentytwenty-vertical .twentytwenty-after-label-text {
   bottom: 10px; }
 
 .twentytwenty-overlay {

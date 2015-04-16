@@ -33,9 +33,12 @@
       beforeImg.addClass("twentytwenty-before");
       afterImg.addClass("twentytwenty-after");
       
-      var overlay = $container.find(".twentytwenty-overlay");
-      overlay.append("<div class='twentytwenty-before-label'></div>");
-      overlay.append("<div class='twentytwenty-after-label'></div>");
+      var overlay       = $container.find(".twentytwenty-overlay");
+      var beforeImgText = beforeImg.attr("alt") || "Before";
+      var afterImgText  = afterImg.attr("alt") || "After";
+
+      overlay.append("<div class='twentytwenty-before-label'><div class='twentytwenty-before-label-text'>" + beforeImgText + "</div></div>");
+      overlay.append("<div class='twentytwenty-after-label'><div class='twentytwenty-after-label-text'>" + afterImgText + "</div></div>");
 
       var calcOffset = function(dimensionPct) {
         var w = beforeImg.width();

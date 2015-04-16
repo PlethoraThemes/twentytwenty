@@ -10,9 +10,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>twentytwenty</title>
   <link href="css/foundation.css" rel="stylesheet" type="text/css" />
-  <link href="css/twentytwenty.css" rel="stylesheet" type="text/css" />
+  <link href="css/twentytwenty.min.css" rel="stylesheet" type="text/css" />
 </head>
   <body>
+
+    <!--========= Basic Usage =========-->
 
     <div class="row" style="margin-top: 2em;">
       <div class="large-4 columns">
@@ -26,6 +28,8 @@
         </div>
       </div>
     </div>
+
+    <!--========= Vertical Orientation =========-->
     
     <div class="row" style="margin-top: 2em; margin-bottom: 2em;">
       <div class="large-4 columns">
@@ -39,6 +43,8 @@
         </div>
       </div>
     </div>
+
+    <!--========= Using Multiple Comparisons at Once =========-->
 
     <div class="row" style="margin-bottom: 2em;">
       <div class="large-4 columns">
@@ -59,6 +65,29 @@
       </div>
     </div>
 
+    <!--========= Custom Before After Text =========-->
+
+    <div class="row" style="margin-bottom: 2em;">
+      <div class="large-4 columns">
+        <h3>Custom Before and After Text</h3>
+        <p>Using custom text for Before and after boxes.</p>
+      </div>
+      <div class="large-4 columns">
+        <div class="twentytwenty-container">
+          <img src="img/2_1.jpg" alt="Antes" />
+          <img src="img/2_2.jpg" alt="Después" />
+        </div>
+      </div>
+      <div class="large-4 columns">
+        <div class="twentytwenty-container">
+          <img src="img/3_1.jpg" alt="Πριν" />
+          <img src="img/3_2.jpg" alt="Μετά" />
+        </div>
+      </div>
+    </div>
+
+    <!--========= Configuration via HTML5 Data Attributes =========-->
+
     <div class="row" style="margin-top: 2em; margin-bottom: 2em;">
       <div class="large-4 columns">
         <h3>Configuration via HTML5 Data Attributes</h3>
@@ -74,7 +103,7 @@
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <script src="js/jquery.event.move.js"></script>
-    <script src="js/jquery.twentytwenty.js"></script>
+    <script src="js/jquery.twentytwenty.min.js"></script>
     <script>
     $(window).load(function(){
       $(".twentytwenty-container[data-orientation!='vertical']").twentytwenty({default_offset_pct: 0.7});
