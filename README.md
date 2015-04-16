@@ -11,14 +11,17 @@ Include the javascript and css files.
 You might need to change the paths to match your setup.
 
 
-After including the files you are ready to create a container that holds two images:
+After including the files you are ready to create a container that holds two images.
+
+The `Before` and `After` text labels can be changed via the `img alt` attribute. 
+If this two attributes are ommited, a default **Before** and **After** text is used:
 
 ```html
 <div id="container1">
  <!-- The before image is first -->
- <img src="http://placehold.it/400x200&text=1" />
+ <img src="http://placehold.it/400x200&text=1" alt="Before" />
  <!-- The after image is last -->
- <img src="http://placehold.it/400x200&text=2" />
+ <img src="http://placehold.it/400x200&text=2" alt="After" />
 </div>
 ```
 
